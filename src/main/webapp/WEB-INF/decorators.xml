@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+	<!-- Trong lúc controller nhận được url thì decorator cũng nhận được và trả về master layout
+	kết hợp với web con mà controller trả về -->
+    <decorator name="trang-chu" page="web.jsp">
+       <pattern>/*</pattern>
+    </decorator>
+    
+    <decorator name="admin" page="admin.jsp">
+       <pattern>/quan-tri*</pattern>
+    </decorator>
+    
+     <decorator name="login" page="login.jsp">
+        <pattern>/dang-nhap</pattern>
+    </decorator>
+
+</decorators>
